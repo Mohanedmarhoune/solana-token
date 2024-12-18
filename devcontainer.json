@@ -1,1 +1,8 @@
+{
+  "image": "mcr.microsoft.com/vscode/devcontainers/rust:1",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {}
+  },
+  "postCreateCommand": "curl -sSfL https://release.solana.com/v1.17.0/install | sh && export PATH=\"/root/.local/share/solana/install/active_release/bin:$PATH\""
+}
 
